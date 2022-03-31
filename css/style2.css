@@ -10,7 +10,7 @@ li{
 }
 
 body{
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    background-image: linear-gradient(to top, #a18cd1 80%, #fbc2eb 100%);
 }
 
 /* header */
@@ -18,7 +18,7 @@ header{
     height: 30%;
     display: grid;
     grid-template-areas: "logo logo logo"
-                         "boton boton boton";
+                         "menu menu menu";
     justify-content: center;
     text-align: center;
 }
@@ -32,7 +32,7 @@ header{
 }
 .menu{
     height: 20%;
-    grid-area: boton;
+    grid-area: menu;
     margin: 1rem;
 }
 
@@ -322,8 +322,8 @@ form{
     .final{
         height: 20%;
         display: grid;
-        grid-template-areas: "redes autor boton"
-                             "redes autor boton";
+        grid-template-areas: "redes autor menu"
+                             "redes autor menu";
         color: #e6c7fa;
         
     }
@@ -333,7 +333,7 @@ form{
     }
 
     .final__menu{
-        grid-area: boton;
+        grid-area: menu;
         display: block;
         margin:2rem;
         padding: .5rem;
@@ -352,8 +352,8 @@ form{
     /*media header 1200*/
     header{
         display: grid;
-        grid-template-areas: "boton boton boton boton logo"
-                             "boton boton boton boton logo";
+        grid-template-areas: "menu menu menu menu logo"
+                             "menu menu menu menu logo";
         justify-content: space-between;    
         align-items: space-between;
     }
@@ -368,7 +368,7 @@ form{
     }
     .menu{
         height: 50%;
-        grid-area: boton;
+        grid-area: menu;
         margin: 4rem;
     }
     
