@@ -1,487 +1,540 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Cairo', sans-serif;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cairo", sans-serif;
+  box-sizing: border-box;
 }
 
-li{
-    list-style: none;
+body {
+  background-color: #fbc2eb;
 }
 
-body{
-    background-image: linear-gradient(to top, #a18cd1 80%, #fbc2eb 100%);
+li {
+  list-style: none;
 }
 
 /* header */
-header{
-    height: 30%;
-    display: grid;
-    grid-template-areas: "logo logo logo"
-                         "menu menu menu";
-    justify-content: center;
-    text-align: center;
+header {
+  height: 30%;
+  display: grid;
+  grid-template-areas:
+    "logo logo logo"
+    "menu menu menu";
+  justify-content: center;
+  text-align: center;
 }
 
-.logo{
-    height: 80%;
-    grid-area: logo;
+.logo {
+  height: 80%;
+  grid-area: logo;
 }
-.logo img{
-    width: 30%;
+.logo img {
+  width: 30%;
 }
-.menu{
-    height: 20%;
-    grid-area: menu;
-    margin: 1rem;
+.menu {
+  height: 50%;
+  grid-area: menu;
+  margin: 1rem;
+  border-bottom: 2px solid #6e4c94;
+  animation-name: border;
+  animation-timing-function: ease;
+  animation-iteration-count: initial;
+  animation-duration: 2s;
 }
 
 .menu__lista {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    border-bottom: 1px solid #6E4C94 ;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
 }
 
-.menu__lista__button{
-    text-decoration: none;
-    color: #6E4C94 ;
+@keyframes border {
+  0% {
+    border-bottom: 2px solid #6e4c94;
+  }
+  12% {
+    border-bottom: 2.1px solid #52386e;
+  }
+  25% {
+    border-bottom: 2.2px solid #6e4c94;
+  }
+  32% {
+    border-bottom: 2.3px solid #52386e;
+  }
+  50% {
+    border-bottom: 2.4px solid #6e4c94;
+  }
+  62% {
+    border-bottom: 2.3px solid #52386e;
+  }
+  75% {
+    border-bottom: 2.2px solid #6e4c94;
+  }
+  82% {
+    border-bottom: 2.1px solid #52386e;
+  }
+  100% {
+    border-bottom: 2px solid #6e4c94;
+  }
+}
+
+.menu__lista__button {
+  text-decoration: none;
+  color: #6e4c94;
 }
 /*fin header*/
 
 /*inicio*/
-.inicio{
-    height: 50%;
-    display: grid;
-    grid-template-areas: "titulo titulo titulo"
-                        "texto texto texto"
-                        "imagen imagen imagen";
-    color: #6E4C94 ;
-    justify-content: center;
-    text-align: center;
+.inicio {
+  height: 50%;
+  display: grid;
+  grid-template-areas:
+    "titulo titulo titulo"
+    "texto texto texto"
+    "imagen imagen imagen";
+  color: #6e4c94;
+  justify-content: center;
+  text-align: center;
 }
 
-.inicio__titulo{
-    grid-area: titulo;
-
+.inicio__titulo {
+  grid-area: titulo;
 }
 
-.inicio__texto{
-    grid-area: texto;
-    padding: .5rem;
+.inicio__texto {
+  grid-area: texto;
+  padding: 0.5rem;
 }
 
-.inicio__imagen{
-    grid-area: imagen;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
+.inicio__imagen {
+  grid-area: imagen;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
-.inicio__imagen .imagen1,.imagen2{
-    width:20rem;
-    height:20rem;
-    padding: 1.2rem;
-    border-radius: 30%;
-    opacity: 75%;
+.inicio__imagen .imagen1,
+.imagen2 {
+  width: 20rem;
+  height: 20rem;
+  padding: 1.2rem;
+  border-radius: 30%;
+  opacity: 75%;
 }
 /*fin inicio*/
 
-
 /* tratamientos */
- 
-.tratamientos{
-    height: 50%;
-    display: grid;
-    grid-template-areas: "titulo titulo"
-                         "texto texto"
-                         "imagen imagen"
-                         "imagen imagen" 
-    ;
-    color: #6E4C94 ;
-    justify-content: center;
-    text-align: center;
+
+.tratamientos {
+  height: 50%;
+  display: grid;
+  grid-template-areas:
+    "titulo titulo"
+    "texto texto"
+    "imagen imagen"
+    "imagen imagen";
+  color: #6e4c94;
+  justify-content: center;
+  text-align: center;
 }
-.tratamientos__titulo{
-    grid-area: titulo;
+.tratamientos__titulo {
+  grid-area: titulo;
 }
 
-.tratamientos__texto{
-    grid-area: texto;
-    padding: .5rem;
+.tratamientos__texto {
+  grid-area: texto;
+  padding: 0.5rem;
 }
-.tratamientos__imagenes{
-    grid-area: imagen;
-    margin: .5rem;
+.tratamientos__imagenes {
+  grid-area: imagen;
+  margin: 0.5rem;
 }
-.tratamientos__imagenes img{
-    width: 12rem;
-    height: 12rem;
-    border: .8rem solid #b9a48b;
-    border-radius: 50%;
-    opacity: 75%;
+.tratamientos__imagenes img {
+  width: 12rem;
+  height: 12rem;
+  border: 0.8rem solid #b9a48b;
+  border-radius: 50%;
+  opacity: 75%;
 }
 /*fin tratamientos*/
 
 /*productos*/
 
-.productos{
-    height: 50%;
-    display: grid;
-    grid-template-areas: "titulo titulo"
-                         "texto texto"
-                         "imagen imagen"
-                         "imagen imagen" 
-    ;
-    color: #6E4C94 ;
-    justify-content: center;
-    text-align: center;
+.productos {
+  height: 50%;
+  display: grid;
+  grid-template-areas:
+    "titulo titulo"
+    "texto texto"
+    "imagen imagen"
+    "imagen imagen";
+  color: #6e4c94;
+  justify-content: center;
+  text-align: center;
 }
-.productos__titulo{
-    grid-area: titulo;
+.productos__titulo {
+  grid-area: titulo;
 }
 
-.productos__texto{
-    grid-area: texto;
-    padding: .5rem;
+.productos__texto {
+  grid-area: texto;
+  padding: 0.5rem;
 }
-.productos__imagenes{
-    grid-area: imagen;
-    margin: .5rem;
+.productos__imagenes {
+  grid-area: imagen;
+  margin: 0.5rem;
 }
-.productos__imagenes img{
-    width: 12rem;
-    height: 12rem;
-    border: .8rem solid #b9a48b;
-    border-radius: 50%;
-    opacity: 75%;
+.productos__imagenes img {
+  width: 12rem;
+  height: 12rem;
+  border: 0.8rem solid #b9a48b;
+  border-radius: 50%;
+  opacity: 75%;
 }
 /*fin productos*/
 
 /* conocenos */
 
 .conocenos {
-    display: grid;
-    grid-template-areas: "titulo titulo"
-                         "texto texto"
-                         "mapa mapa";
-    color: #6E4C94 ;
-    justify-content: center;
-    text-align: center;
+  display: grid;
+  grid-template-areas:
+    "titulo titulo"
+    "texto texto"
+    "mapa mapa";
+  color: #6e4c94;
+  justify-content: center;
+  text-align: center;
 }
 
-.conocenos__titulo{
-    grid-area: titulo;
+.conocenos__titulo {
+  grid-area: titulo;
 }
 
 .conocenos__texto {
-    grid-area: texto;
-    padding: 3rem;
+  grid-area: texto;
+  padding: 3rem;
 }
-.conocenos__texto img{
-    display: none;
+.conocenos__texto img {
+  display: none;
 }
 
-.conocenos__mapa{
-    grid-area: mapa;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    margin: 1rem;
+.conocenos__mapa {
+  grid-area: mapa;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 1rem;
 }
 
 .conocenos__mapa iframe {
-    height: 18rem;
-    width: 26rem;
-    border: 1px solid #b9a48b;
-    border-radius: 20px;
-    opacity: 75%;    
+  height: 18rem;
+  width: 26rem;
+  border: 1px solid #b9a48b;
+  border-radius: 20px;
+  opacity: 75%;
 }
 
 .conocenos__mapa__datos {
-    font-size: 1.2rem;
-    padding: 2.5%;
-    border: 1px solid #b9a48b;
-    border-radius: 5%;
-    color: #DEAFFC  ;
+  font-size: 1.2rem;
+  padding: 2.5%;
+  border: 1px solid #b9a48b;
+  border-radius: 5%;
+  color: #deaffc;
 }
 /*fin conocenos*/
 
 /* contacto */
 .contacto {
-    height: 50%;
-    display: grid;
-    grid-template-areas: "titulo titulo"
-                         "texto texto"
-                         "formulario formulario";
-    margin-bottom: 1%;
-    color: #6E4C94 ;
-    justify-content: center;
-    text-align: center;
+  height: 50%;
+  display: grid;
+  grid-template-areas:
+    "titulo titulo"
+    "texto texto"
+    "formulario formulario";
+  margin-bottom: 1%;
+  color: #6e4c94;
+  justify-content: center;
+  text-align: center;
 }
 
-.contacto__titulo{
-    grid-area: titulo;
+.contacto__titulo {
+  grid-area: titulo;
 }
 
-.contacto__texto{
-    grid-area: texto;
-    padding: 3rem;
+.contacto__texto {
+  grid-area: texto;
+  padding: 3rem;
 }
 
-form{
-    grid-area: formulario;
-    margin: 1.3rem;
+form {
+  grid-area: formulario;
+  margin: 1.3rem;
 }
 
-.contacto__formulario{    
-    border: 1px solid #726556;
-    border-radius: 10%;
+.contacto__formulario {
+  border: 1px solid #725256;
+  border-radius: 10%;
 }
 
-.contacto__formulario div{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    font-size: .8rem;
-    margin: 2.6%;
+.contacto__formulario div {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin: 2.6%;
 }
 
-.contacto__formulario div input{
-    font-size: .8rem;
+.contacto__formulario div input {
+  font-size: 0.8rem;
 }
 /*fin contacto*/
 
 /*footer*/
 
-.final{
-    height: 20%;
-    display: grid;
-    grid-template-areas: "redes autor"
-                         "redes autor";
-    justify-content: space-ç;
-    color: #e6c7fa;
-    
+.final {
+  height: 20%;
+  display: grid;
+  grid-template-areas:
+    "redes autor"
+    "redes autor";
+  justify-content: space-ç;
+  color: #6e4c94;
 }
 
-.final__redes{
-    grid-area: redes;
-    font-size: 1rem;
-    margin:2rem; 
-    padding: .5rem;   
+.final__redes {
+  grid-area: redes;
+  font-size: 1rem;
+  margin: 2rem;
+  padding: 0.5rem;
 }
 
-.final__redes img{
-    width: 20px;
+.final__redes img {
+  width: 1.8rem;
+  transition: all 3s;
 }
 
-.final__autor{
-    grid-area: autor;
-    margin:2rem;
-    padding: .5rem;
-    text-align: center;
-    border-left: 1px solid #e6c7fa;
+.final__redes img:hover {
+  transform: rotateY(360deg);
 }
 
-.final__menu{
-    display: none;
+.final__autor {
+  grid-area: autor;
+  margin: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  border-left: 1px solid #6e4c94;
+}
+
+.final__menu {
+  display: none;
 }
 /*fin footer^/  
 
 
 /*media inicio*/
 
-@media only screen and (min-width:600px){
+@media only screen and (min-width: 540px) {
+  /*media home 540*/
+  .inicio__imagen {
+    grid-area: imagen;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
 
-    /*media home 600*/
-    .inicio__imagen{
-        grid-area: imagen;
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-    }
+  .inicio__imagen .imagen1,
+  .imagen2 {
+    width: 16.6rem;
+    height: 16.6rem;
+  }
 
-    .inicio__imagen .imagen1,.imagen2{
-        width:19rem;
-        height:19rem;
-    }
+  /*media tratamientos 540*/
+  .tratamientos__imagenes img {
+    width: 16rem;
+    height: 16rem;
+  }
 
-    /*media tratamientos 600*/
-    .tratamientos__imagenes img{
-        width: 16rem;
-        height: 16rem;
-    }
+  /*media productos 540*/
+  .productos__imagenes img {
+    width: 16rem;
+    height: 16rem;
+  }
 
-    /*media productos 600*/
-    .productos__imagenes img{
-        width: 16rem;
-        height: 16rem;
-    }
+  /*media footer 540*/
 
-    /*media footer 600*/
-    .final{
-        height: 20%;
-        display: grid;
-        grid-template-areas: "redes autor menu"
-                             "redes autor menu";
-        color: #e6c7fa;
-        
-    }
+  .final__redes {
+    text-align: center;
+  }
 
-    .final__redes{
-        text-align: center;   
-    }
-
-    .final__menu{
-        grid-area: menu;
-        display: block;
-        margin:2rem;
-        padding: .5rem;
-        text-align: center;
-        border-left: 1px solid #e6c7fa;
-    }
-
-    .final__menu__button{
-        text-decoration: none;
-        color:#e6c7fa;
-    }
+  .final__menu__button {
+    text-decoration: none;
+    color: #6e4c94;
+  }
 }
 
+@media only screen and (min-width: 1200px) {
+  /*media header 1200*/
+  header {
+    display: grid;
+    grid-template-areas:
+      "menu menu menu menu logo"
+      "menu menu menu menu logo";
+    justify-content: space-between;
+    align-items: space-between;
+  }
+  .logo {
+    height: 50%;
+    grid-area: logo;
+  }
+  .logo img {
+    width: 40%;
+    text-align: end;
+  }
+  .menu {
+    height: 28%;
+    grid-area: menu;
+    margin: 4rem;
+  }
 
-@media only screen and (min-width:1200px){
-    /*media header 1200*/
-    header{
-        display: grid;
-        grid-template-areas: "menu menu menu menu logo"
-                             "menu menu menu menu logo";
-        justify-content: space-between;    
-        align-items: space-between;
-    }
-    .logo{
-        height: 50%;
-        grid-area: logo;
-    }
-    .logo img{
-        width: 40%;
-       text-align: end;
-        
-    }
-    .menu{
-        height: 50%;
-        grid-area: menu;
-        margin: 4rem;
-    }
-    
-    .menu__lista {
-        display: flex;
-        justify-content: flex-start;
-        border-bottom: 1px solid #6E4C94 ;
-        padding: 1rem;
-        font-size: 1.2rem;
-    }
-    
-    .menu__lista__button{
-        padding: 1rem;
-    }
+  .menu__lista {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
 
-    /*media home 1200*/
-    .inicio__texto{
-        grid-area: texto;
-        text-align: justify;
-        padding: 1rem;
-        font-size: 1.4rem;
-    }
+  .menu__lista__button {
+    padding: 1rem;
+  }
 
-    /*media tratamientos 1200*/
-    .tratamientos__texto{
-        grid-area: texto;
-        text-align: justify;
-        padding: 1rem;
-        font-size: 1.4rem;
-    }
+  /*media home 1200*/
+  .inicio {
+    margin: 3rem;
+  }
+  .inicio__texto {
+    grid-area: texto;
+    text-align: justify;
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
 
-    .tratamientos__imagenes img{
-        width: 18rem;
-        height: 18rem;
-    }
+  .inicio__imagen .imagen1,
+  .imagen2 {
+    height: 25rem;
+    width: 25rem;
+  }
 
-    /*media producto 1200*/
-    .productos__texto   {
-        grid-area: texto;
-        text-align: justify;
-        padding: 1rem;
-        font-size: 1.4rem;
-    }
+  /*media tratamientos 1200*/
+  .tratamientos__texto {
+    grid-area: texto;
+    text-align: justify;
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin: 3rem;
+  }
 
-    .producto__imagenes img{
-        width: 18rem;
-        height: 18rem;
-    }
+  .tratamientos__imagenes img {
+    width: 18rem;
+    height: 18rem;
+  }
 
-    /*media conocenos 1200*/
-    .conocenos {
-        display: grid;
-        grid-template-areas: "titulo titulo titulo titulo"
-                             "texto texto mapa mapa"
-                             "texto texto mapa mapa";
-        align-content: center;
-    }
-    
-    .conocenos__titulo{
-        grid-area: titulo;
-    }
-    
-    .conocenos__texto {
-        grid-area: texto;
-        display: flex;
-        flex-flow: column nowrap;
-        text-align: justify;
-        align-items: center;
-        font-size: 1.2rem;
+  /*media producto 1200*/
+  .productos__texto {
+    grid-area: texto;
+    text-align: justify;
+    padding: 1rem;
+    font-size: 1.4rem;
+    margin: 3rem;
+  }
 
-    }
-    .conocenos__texto img{
-        display: block;
-        width: 30rem;
-        height: 23rem;
-        padding: 3rem;
-        opacity: 75%;
-    }
-    
-    .conocenos__mapa{
-        grid-area: mapa;
-        display: flex;
-        flex-flow: column nowrap;
-        align-items: center;
-        margin-top: 3.6rem;
-    }
-    
-    .conocenos__mapa ul{
-        margin-top: 4rem;
-        border: 1px solid #726556;
-        border-radius: 10%;
-        padding: 1rem;
+  .producto__imagenes img {
+    width: 18rem;
+    height: 18rem;
+  }
 
-    }
-    
-    /*media contacto 1200*/
-    .contacto{
-        display: grid;
-        grid-template-areas: "titulo titulo titulo titulo"
-                             "texto formulario formulario formulario"
-                             "texto formulario formulario formulario"
-                             "texto formulario formulario formulario";
-    }
-    .contacto__texto{
-        grid-area: texto;
-        text-align: justify;
-        padding: 2rem;
-        font-size: 1.4rem;
-    }
-    form{
-        width: 40%;
-        grid-area: formulario;
-    }
+  /*media conocenos 1200*/
+  .conocenos {
+    display: grid;
+    grid-template-areas:
+      "titulo titulo titulo titulo"
+      "texto texto mapa mapa"
+      "texto texto mapa mapa";
+    align-content: center;
+    margin: 3rem;
+  }
+
+  .conocenos__titulo {
+    grid-area: titulo;
+  }
+
+  .conocenos__texto {
+    grid-area: texto;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: justify;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  .conocenos__texto img {
+    display: block;
+    width: 30rem;
+    height: 23rem;
+    padding: 3rem;
+    opacity: 75%;
+  }
+
+  .conocenos__mapa {
+    grid-area: mapa;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-top: 3.6rem;
+  }
+
+  .conocenos__mapa ul {
+    margin-top: 4rem;
+    border: 1px solid #725256;
+    border-radius: 10%;
+    padding: 1rem;
+  }
+
+  /*media contacto 1200*/
+  .contacto {
+    display: grid;
+    grid-template-areas:
+      "titulo titulo titulo titulo"
+      "texto formulario formulario formulario"
+      "texto formulario formulario formulario"
+      "texto formulario formulario formulario";
+    margin: 3rem;
+  }
+  .contacto__texto {
+    grid-area: texto;
+    text-align: justify;
+    padding: 2rem;
+    font-size: 1.4rem;
+  }
+  form {
+    width: 40%;
+    grid-area: formulario;
+  }
+
+  .final {
+    height: 20%;
+    display: grid;
+    grid-template-areas:
+      "redes autor menu"
+      "redes autor menu";
+  }
+
+  .final__menu {
+    grid-area: menu;
+    display: block;
+    margin: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-left: 1px solid #6e4c94;
+  }
 }
-/*fin media inicio*/
-
+/*fin media*/
