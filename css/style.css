@@ -318,7 +318,7 @@ input,
 textarea {
   outline: none;
   border: 0;
-  width: 15rem;
+  width: 17.5rem;
 }
 
 .contacto__form__field {
@@ -641,8 +641,7 @@ textarea {
   }
 }
 
-@media only screen and (min-width:1300px){
-
+@media only screen and (min-width: 1300px) {
   .inicio__texto {
     grid-area: texto;
     text-align: justify;
@@ -650,7 +649,6 @@ textarea {
     font-size: 2rem;
     text-align: justify;
   }
-
 }
 
 /*fin media*/
