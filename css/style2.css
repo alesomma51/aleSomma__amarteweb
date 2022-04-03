@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #fbc2eb;
+  background: linear-gradient(175deg, #110023, #775ab1);
 }
 
 li {
@@ -35,7 +35,7 @@ header {
   height: 50%;
   grid-area: menu;
   margin: 1rem;
-  border-bottom: 2px solid #6e4c94;
+  border-bottom: 2px solid #deaffc;
   animation-name: border;
   animation-timing-function: ease;
   animation-iteration-count: initial;
@@ -50,77 +50,113 @@ header {
 
 @keyframes border {
   0% {
-    border-bottom: 2px solid #6e4c94;
+    border-bottom: 2px solid #deaffc;
   }
   12% {
     border-bottom: 2.1px solid #52386e;
   }
   25% {
-    border-bottom: 2.2px solid #6e4c94;
+    border-bottom: 2.2px solid #deaffc;
   }
   32% {
     border-bottom: 2.3px solid #52386e;
   }
   50% {
-    border-bottom: 2.4px solid #6e4c94;
+    border-bottom: 2.4px solid #deaffc;
   }
   62% {
     border-bottom: 2.3px solid #52386e;
   }
   75% {
-    border-bottom: 2.2px solid #6e4c94;
+    border-bottom: 2.2px solid #deaffc;
   }
   82% {
     border-bottom: 2.1px solid #52386e;
   }
   100% {
-    border-bottom: 2px solid #6e4c94;
+    border-bottom: 2px solid #deaffc;
   }
 }
 
 .menu__lista__button {
   text-decoration: none;
-  color: #6e4c94;
+  color: #deaffc;
 }
 /*fin header*/
 
 /*inicio*/
 .inicio {
   height: 50%;
+  color: #deaffc;
   display: grid;
   grid-template-areas:
-    "titulo titulo titulo"
-    "texto texto texto"
-    "imagen imagen imagen";
-  color: #6e4c94;
+    "titulo titulo"
+    "texto texto"
+    "imagen imagen";
+  overflow: hidden;
   justify-content: center;
   text-align: center;
 }
 
 .inicio__titulo {
   grid-area: titulo;
+  text-align: center;
 }
 
 .inicio__texto {
   grid-area: texto;
-  padding: 0.5rem;
+  padding: 1rem 30rem;
+  text-align: justify;
 }
 
-.inicio__imagen {
+.slider {
   grid-area: imagen;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  width: 95%;
+  margin: 1rem;
+  animation: cambio 10s infinite alternate;
+  animation-timing-function: ease-in-out;
 }
 
-.inicio__imagen .imagen1,
-.imagen2 {
-  width: 20rem;
-  height: 20rem;
-  padding: 1.2rem;
-  border-radius: 30%;
-  opacity: 75%;
+.slider__imagen {
+  display: flex;
+  padding: 0;
+  width: 315%;
 }
+
+.slider__imagen li {
+  width: 100%;
+}
+
+.slider__imagen__uno,
+.slider__imagen__dos,
+.slider__imagen__tres {
+  width: 28rem;
+  height: 20rem;
+  border-radius: 6%;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  30% {
+    margin-left: 0;
+  }
+  35% {
+    margin-left: -99.5%;
+  }
+  65% {
+    margin-left: -99.5%;
+  }
+
+  70% {
+    margin-left: -199.5%;
+  }
+  100% {
+    margin-left: -199.5%;
+  }
+}
+
 /*fin inicio*/
 
 /* tratamientos */
@@ -133,7 +169,7 @@ header {
     "texto texto"
     "imagen imagen"
     "imagen imagen";
-  color: #6e4c94;
+  color: #deaffc;
   justify-content: center;
   text-align: center;
 }
@@ -168,7 +204,7 @@ header {
     "texto texto"
     "imagen imagen"
     "imagen imagen";
-  color: #6e4c94;
+  color: #deaffc;
   justify-content: center;
   text-align: center;
 }
@@ -201,7 +237,7 @@ header {
     "titulo titulo"
     "texto texto"
     "mapa mapa";
-  color: #6e4c94;
+  color: #deaffc;
   justify-content: center;
   text-align: center;
 }
@@ -252,7 +288,7 @@ header {
     "texto texto"
     "formulario formulario";
   margin-bottom: 1%;
-  color: #6e4c94;
+  color: #deaffc;
   justify-content: center;
   text-align: center;
 }
@@ -298,7 +334,7 @@ form {
     "redes autor"
     "redes autor";
   justify-content: space-ç;
-  color: #6e4c94;
+  color: #deaffc;
 }
 
 .final__redes {
@@ -322,7 +358,7 @@ form {
   margin: 2rem;
   padding: 0.5rem;
   text-align: center;
-  border-left: 1px solid #6e4c94;
+  border-left: 1px solid #deaffc;
 }
 
 .final__menu {
@@ -335,17 +371,11 @@ form {
 
 @media only screen and (min-width: 540px) {
   /*media home 540*/
-  .inicio__imagen {
-    grid-area: imagen;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-  }
 
-  .inicio__imagen .imagen1,
-  .imagen2 {
-    width: 16.6rem;
-    height: 16.6rem;
+  .inicio__texto {
+    grid-area: texto;
+    padding: 1rem 20rem;
+    text-align: justify;
   }
 
   /*media tratamientos 540*/
@@ -368,7 +398,7 @@ form {
 
   .final__menu__button {
     text-decoration: none;
-    color: #6e4c94;
+    color: #deaffc;
   }
 }
 
@@ -414,15 +444,16 @@ form {
   .inicio__texto {
     grid-area: texto;
     text-align: justify;
-    padding: 1rem;
-    font-size: 1.4rem;
-    margin-bottom: 2rem;
+    padding: 1rem 40rem;
+    font-size: 2rem;
+    text-align: justify;
   }
 
-  .inicio__imagen .imagen1,
-  .imagen2 {
-    height: 25rem;
-    width: 25rem;
+  .slider__imagen__uno,
+  .slider__imagen__dos,
+  .slider__imagen__tres {
+    height: 38rem;
+    width: 45rem;
   }
 
   /*media tratamientos 1200*/
@@ -534,7 +565,7 @@ form {
     margin: 2rem;
     padding: 0.5rem;
     text-align: center;
-    border-left: 1px solid #6e4c94;
+    border-left: 1px solid #deaffc;
   }
 }
 /*fin media*/
