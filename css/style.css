@@ -507,7 +507,7 @@ textarea {
   .inicio__texto {
     grid-area: texto;
     text-align: justify;
-    padding: 1rem 40rem;
+    padding: 1rem 38rem;
     font-size: 2rem;
     text-align: justify;
   }
@@ -640,4 +640,17 @@ textarea {
     border-left: 1px solid #deaffc;
   }
 }
+
+@media only screen and (min-width:1300px){
+
+  .inicio__texto {
+    grid-area: texto;
+    text-align: justify;
+    padding: 1rem 28rem;
+    font-size: 2rem;
+    text-align: justify;
+  }
+
+}
+
 /*fin media*/
