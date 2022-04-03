@@ -44,7 +44,7 @@ header {
 
 .menu__lista {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: nowrap;
 }
 
@@ -81,6 +81,7 @@ header {
 .menu__lista__button {
   text-decoration: none;
   color: #deaffc;
+  font-size: 13.5px;
 }
 /*fin header*/
 
@@ -105,11 +106,11 @@ header {
 
 .inicio__texto {
   grid-area: texto;
-  padding: 1rem 30rem;
+  padding: 1rem 28.5rem;
   text-align: justify;
 }
 
-.slider {
+.inicio__slider {
   grid-area: imagen;
   width: 95%;
   margin: 1rem;
@@ -117,20 +118,20 @@ header {
   animation-timing-function: ease-in-out;
 }
 
-.slider__imagen {
+.inicio__slider__imagen {
   display: flex;
   padding: 0;
   width: 315%;
 }
 
-.slider__imagen li {
+.inicio__slider__imagen li {
   width: 100%;
 }
 
-.slider__imagen__uno,
-.slider__imagen__dos,
-.slider__imagen__tres {
-  width: 28rem;
+.inicio__slider__imagen__uno,
+.inicio__slider__imagen__dos,
+.inicio__slider__imagen__tres {
+  width: 26rem;
   height: 20rem;
   border-radius: 6%;
 }
@@ -179,7 +180,8 @@ header {
 
 .tratamientos__texto {
   grid-area: texto;
-  padding: 0.5rem;
+  padding: 1rem;
+  text-align: justify;
 }
 .tratamientos__imagenes {
   grid-area: imagen;
@@ -214,7 +216,8 @@ header {
 
 .productos__texto {
   grid-area: texto;
-  padding: 0.5rem;
+  padding: 1rem;
+  text-align: justify;
 }
 .productos__imagenes {
   grid-area: imagen;
@@ -248,7 +251,8 @@ header {
 
 .conocenos__texto {
   grid-area: texto;
-  padding: 3rem;
+  padding: 1rem;
+  text-align: justify;
 }
 .conocenos__texto img {
   display: none;
@@ -264,17 +268,14 @@ header {
 
 .conocenos__mapa iframe {
   height: 18rem;
-  width: 26rem;
+  width: 22rem;
   border: 1px solid #b9a48b;
   border-radius: 20px;
-  opacity: 75%;
+  opacity: 85%;
 }
 
-.conocenos__mapa__datos {
+.conocenos__mapa__datos li {
   font-size: 1.2rem;
-  padding: 2.5%;
-  border: 1px solid #b9a48b;
-  border-radius: 5%;
   color: #deaffc;
 }
 /*fin conocenos*/
@@ -290,38 +291,60 @@ header {
   margin-bottom: 1%;
   color: #deaffc;
   justify-content: center;
-  text-align: center;
+  text-align: justify;
 }
 
 .contacto__titulo {
   grid-area: titulo;
+  text-align: center;
 }
 
 .contacto__texto {
   grid-area: texto;
-  padding: 3rem;
+  padding: 1rem;
 }
 
-form {
+.contacto__form {
   grid-area: formulario;
-  margin: 1.3rem;
+  width: 20rem;
+  padding: 1.3rem;
+  margin: auto;
+  background-color: whitesmoke;
+  color: #554c5f;
+  border-radius: 5%;
+  font-size: 0.9rem;
+}
+input,
+textarea {
+  outline: none;
+  border: 0;
+  width: 15rem;
 }
 
-.contacto__formulario {
-  border: 1px solid #725256;
-  border-radius: 10%;
+.contacto__form__field {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+}
+.contacto__form__field:focus {
+  border-color: #52386e;
 }
 
-.contacto__formulario div {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  font-size: 0.8rem;
-  margin: 2.6%;
+.contacto__form__center__content {
+  text-align: center;
+}
+.contacto__form__center__content__btn {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 1.2rem 1rem;
+  text-decoration: none;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  color: white;
+  background-color: #52386e;
 }
 
-.contacto__formulario div input {
-  font-size: 0.8rem;
+.contacto__form__center__content__btngreen:active {
+  background-color: #39274d;
 }
 /*fin contacto*/
 
@@ -333,13 +356,13 @@ form {
   grid-template-areas:
     "redes autor"
     "redes autor";
-  justify-content: space-ç;
+  justify-content: space-between;
   color: #deaffc;
 }
 
 .final__redes {
   grid-area: redes;
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 2rem;
   padding: 0.5rem;
 }
@@ -359,6 +382,7 @@ form {
   padding: 0.5rem;
   text-align: center;
   border-left: 1px solid #deaffc;
+  font-size: 0.85rem;
 }
 
 .final__menu {
@@ -369,34 +393,73 @@ form {
 
 /*media inicio*/
 
-@media only screen and (min-width: 540px) {
-  /*media home 540*/
+@media only screen and (min-width: 420px) {
+  /*media home 420*/
 
   .inicio__texto {
     grid-area: texto;
-    padding: 1rem 20rem;
-    text-align: justify;
+    padding: 1rem 27.5rem;
   }
 
-  /*media tratamientos 540*/
+  /*media tratamientos 420*/
   .tratamientos__imagenes img {
     width: 16rem;
     height: 16rem;
   }
 
-  /*media productos 540*/
+  /*media productos 420*/
   .productos__imagenes img {
     width: 16rem;
     height: 16rem;
   }
 
-  /*media footer 540*/
-
-  .final__redes {
-    text-align: center;
+  /*media contacto 420*/
+  .contacto__form {
+    width: 20rem;
+  }
+  input,
+  textarea {
+    width: 17.5rem;
   }
 
-  .final__menu__button {
+  /*media footer 420*/
+}
+
+@media only screen and (min-width: 720px) {
+  /*media header 720*/
+  .menu__lista__button {
+    font-size: 1.3rem;
+  }
+
+  /*media inicio 720*/
+  .inicio__texto {
+    grid-area: texto;
+    padding: 1rem 20.5rem;
+  }
+
+  /*media footer 720*/
+  .final {
+    height: 20%;
+    display: grid;
+    grid-template-areas:
+      "redes autor menu"
+      "redes autor menu";
+  }
+
+  .final__autor {
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    text-align: justify;
+  }
+  .final__menu {
+    grid-area: menu;
+    display: block;
+    margin: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+    border-left: 1px solid #deaffc;
+  }
+  .final__menu a {
     text-decoration: none;
     color: #deaffc;
   }
@@ -449,9 +512,9 @@ form {
     text-align: justify;
   }
 
-  .slider__imagen__uno,
-  .slider__imagen__dos,
-  .slider__imagen__tres {
+  .inicio__slider__imagen__uno,
+  .inicio__slider__imagen__dos,
+  .inicio__slider__imagen__tres {
     height: 38rem;
     width: 45rem;
   }
@@ -505,14 +568,15 @@ form {
     flex-flow: column nowrap;
     text-align: justify;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    margin-top: 3.6rem;
   }
   .conocenos__texto img {
     display: block;
     width: 30rem;
-    height: 23rem;
+    height: 26rem;
     padding: 3rem;
-    opacity: 75%;
+    opacity: 85%;
   }
 
   .conocenos__mapa {
@@ -522,10 +586,13 @@ form {
     align-items: center;
     margin-top: 3.6rem;
   }
-
+  .conocenos__mapa iframe {
+    height: 30rem;
+    width: 30em;
+  }
   .conocenos__mapa ul {
     margin-top: 4rem;
-    border: 1px solid #725256;
+    border: 1px solid #deaffc;
     border-radius: 10%;
     padding: 1rem;
   }
@@ -538,19 +605,24 @@ form {
       "texto formulario formulario formulario"
       "texto formulario formulario formulario"
       "texto formulario formulario formulario";
-    margin: 3rem;
+    margin: 6rem;
   }
   .contacto__texto {
     grid-area: texto;
     text-align: justify;
-    padding: 2rem;
-    font-size: 1.4rem;
+    padding: 5rem;
+    font-size: 1.7rem;
   }
-  form {
-    width: 40%;
+  .contacto__form {
     grid-area: formulario;
+    width: 33rem;
+  }
+  input,
+  textarea {
+    width: 29rem;
   }
 
+  /*media footer 1200*/
   .final {
     height: 20%;
     display: grid;
@@ -562,9 +634,9 @@ form {
   .final__menu {
     grid-area: menu;
     display: block;
-    margin: 2rem;
-    padding: 0.5rem;
-    text-align: center;
+    width: 20rem;
+    padding-left: 3rem;
+    text-align: justify;
     border-left: 1px solid #deaffc;
   }
 }

@@ -42,33 +42,18 @@
         <p class="contacto__texto">
              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus saepe officia quas rerum magni omnis consequatur sit culpa ratione totam vitae nobis doloribus placeat, nulla dignissimos nemo unde asperiores aliquam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis corrupti dolore ab, neque veniam officiis nobis voluptatibus suscipit facere, eligendi illum similique, consequatur animi? Molestias excepturi eos dolorum veniam? 
         </p>
-        <form>
-            <fieldset class="contacto__formulario"> 
-                <legend>Tus datos</legend>
-                <div>
-                    <label for="nombre">Tu Nombre</label>
-                    <input type="text" name="Nombre">
-                </div>
-                <div>
-                    <label for="email">Tu Email</label>
-                    <input type="email" name="Email">
-                </div>
-                <div>
-                    <label for="telefono">Teléfono</label>
-                    <input type="number" name="telefono">
-                </div>
-                <div>
-                    <label for="fecha de nacimiento">Fecha de Nacimiento</label>
-                    <input type="date" name="fecha de nacimiento">
-                </div>
-                <div>
-                    <textarea name="consulta" cols="80" rows="7" placeholder="Tu consulta"></textarea>
-                </div>
-                <div>
-                    <input type="submit">
-                    <input type="reset">
-                </div>
-            </fieldset>
+        <form class="contacto__form">
+            <p>Tu Nombre</p>
+            <input type="text" class="contacto__form__field">
+            <p>Email</p>
+            <input type="email" class="contacto__form__field">
+            <p>Fecha de Nacimiento</p>
+            <input type="date" class="contacto__form__field">
+            <p>Mensaje</p>
+            <textarea cols="20" rows="5" class="contacto__form__field"></textarea>
+            <p class="contacto__form__center__content">
+                <input type="button" class="contacto__form__center__content__btn" value="Enviar">
+            </p>         
         </form>
     </main>
     <!-- fin main-->
