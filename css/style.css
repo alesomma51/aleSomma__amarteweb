@@ -1,654 +1,74 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Cairo", sans-serif;
-  box-sizing: border-box;
+
+body{
+  background: rgb(249,85,123);
+background: linear-gradient(0deg, rgba(249,85,123,1) 0%, rgba(251,151,174,1) 86%);
+  color:rgb(225, 223, 223);
 }
 
-body {
-  background: linear-gradient(175deg, #110023, #775ab1);
+
+/* estilos del header */
+.logo-principal a img{
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
 }
 
-li {
+/* estilos conocenos */
+.conocenos-texto p{
+  text-align: justify;
+}
+.conocenos-imagen{
+  display: none;
+}
+.conocenos-mapa iframe{
+  border-radius: 10%;
+}
+
+/*estilos del footer */
+li{
   list-style: none;
 }
 
-/* header */
-header {
-  height: 30%;
-  display: grid;
-  grid-template-areas:
-    "logo logo logo"
-    "menu menu menu";
-  justify-content: center;
-  text-align: center;
+.final-redes{
+  border-right: 2px pink solid;
+}
+.final-redes li img{
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
-.logo {
-  height: 80%;
-  grid-area: logo;
-}
-.logo img {
-  width: 30%;
-}
-.menu {
-  height: 50%;
-  grid-area: menu;
-  margin: 1rem;
-  border-bottom: 2px solid #deaffc;
-  animation-name: border;
-  animation-timing-function: ease;
-  animation-iteration-count: initial;
-  animation-duration: 2s;
-}
-
-.menu__lista {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: nowrap;
-}
-
-@keyframes border {
-  0% {
-    border-bottom: 2px solid #deaffc;
-  }
-  12% {
-    border-bottom: 2.1px solid #52386e;
-  }
-  25% {
-    border-bottom: 2.2px solid #deaffc;
-  }
-  32% {
-    border-bottom: 2.3px solid #52386e;
-  }
-  50% {
-    border-bottom: 2.4px solid #deaffc;
-  }
-  62% {
-    border-bottom: 2.3px solid #52386e;
-  }
-  75% {
-    border-bottom: 2.2px solid #deaffc;
-  }
-  82% {
-    border-bottom: 2.1px solid #52386e;
-  }
-  100% {
-    border-bottom: 2px solid #deaffc;
-  }
-}
-
-.menu__lista__button {
-  text-decoration: none;
-  color: #deaffc;
-  font-size: 13.5px;
-}
-/*fin header*/
-
-/*inicio*/
-.inicio {
-  height: 50%;
-  color: #deaffc;
-  display: grid;
-  grid-template-areas:
-    "titulo titulo"
-    "texto texto"
-    "imagen imagen";
-  overflow: hidden;
-  justify-content: center;
-  text-align: center;
-}
-
-.inicio__titulo {
-  grid-area: titulo;
-  text-align: center;
-}
-
-.inicio__texto {
-  grid-area: texto;
-  padding: 1rem 28.5rem;
-  text-align: justify;
-}
-
-.inicio__slider {
-  grid-area: imagen;
-  width: 95%;
-  margin: 1rem;
-  animation: cambio 10s infinite alternate;
-  animation-timing-function: ease-in-out;
-}
-
-.inicio__slider__imagen {
-  display: flex;
-  padding: 0;
-  width: 315%;
-}
-
-.inicio__slider__imagen li {
-  width: 100%;
-}
-
-.inicio__slider__imagen__uno,
-.inicio__slider__imagen__dos,
-.inicio__slider__imagen__tres {
-  width: 26rem;
-  height: 20rem;
-  border-radius: 6%;
-}
-
-@keyframes cambio {
-  0% {
-    margin-left: 0;
-  }
-  30% {
-    margin-left: 0;
-  }
-  35% {
-    margin-left: -99.5%;
-  }
-  65% {
-    margin-left: -99.5%;
-  }
-
-  70% {
-    margin-left: -199.5%;
-  }
-  100% {
-    margin-left: -199.5%;
-  }
-}
-
-/*fin inicio*/
-
-/* tratamientos */
-
-.tratamientos {
-  height: 50%;
-  display: grid;
-  grid-template-areas:
-    "titulo titulo"
-    "texto texto"
-    "imagen imagen"
-    "imagen imagen";
-  color: #deaffc;
-  justify-content: center;
-  text-align: center;
-}
-.tratamientos__titulo {
-  grid-area: titulo;
-}
-
-.tratamientos__texto {
-  grid-area: texto;
-  padding: 1rem;
-  text-align: justify;
-}
-.tratamientos__imagenes {
-  grid-area: imagen;
-  margin: 0.5rem;
-}
-.tratamientos__imagenes img {
-  width: 12rem;
-  height: 12rem;
-  border: 0.8rem solid #b9a48b;
-  border-radius: 50%;
-  opacity: 75%;
-}
-/*fin tratamientos*/
-
-/*productos*/
-
-.productos {
-  height: 50%;
-  display: grid;
-  grid-template-areas:
-    "titulo titulo"
-    "texto texto"
-    "imagen imagen"
-    "imagen imagen";
-  color: #deaffc;
-  justify-content: center;
-  text-align: center;
-}
-.productos__titulo {
-  grid-area: titulo;
-}
-
-.productos__texto {
-  grid-area: texto;
-  padding: 1rem;
-  text-align: justify;
-}
-.productos__imagenes {
-  grid-area: imagen;
-  margin: 0.5rem;
-}
-.productos__imagenes img {
-  width: 12rem;
-  height: 12rem;
-  border: 0.8rem solid #b9a48b;
-  border-radius: 50%;
-  opacity: 75%;
-}
-/*fin productos*/
-
-/* conocenos */
-
-.conocenos {
-  display: grid;
-  grid-template-areas:
-    "titulo titulo"
-    "texto texto"
-    "mapa mapa";
-  color: #deaffc;
-  justify-content: center;
-  text-align: center;
-}
-
-.conocenos__titulo {
-  grid-area: titulo;
-}
-
-.conocenos__texto {
-  grid-area: texto;
-  padding: 1rem;
-  text-align: justify;
-}
-.conocenos__texto img {
+.final-menu{
   display: none;
 }
 
-.conocenos__mapa {
-  grid-area: mapa;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  margin: 1rem;
-}
 
-.conocenos__mapa iframe {
-  height: 18rem;
-  width: 22rem;
-  border: 1px solid #b9a48b;
-  border-radius: 20px;
-  opacity: 85%;
-}
+/* media */
 
-.conocenos__mapa__datos li {
-  font-size: 1.2rem;
-  color: #deaffc;
-}
-/*fin conocenos*/
+@media only screen and (min-width:982px) {
 
-/* contacto */
-.contacto {
-  height: 50%;
-  display: grid;
-  grid-template-areas:
-    "titulo titulo"
-    "texto texto"
-    "formulario formulario";
-  margin-bottom: 1%;
-  color: #deaffc;
-  justify-content: center;
-  text-align: justify;
-}
-
-.contacto__titulo {
-  grid-area: titulo;
-  text-align: center;
-}
-
-.contacto__texto {
-  grid-area: texto;
-  padding: 1rem;
-}
-
-.contacto__form {
-  grid-area: formulario;
-  width: 20rem;
-  padding: 1.3rem;
-  margin: auto;
-  background-color: whitesmoke;
-  color: #554c5f;
-  border-radius: 5%;
-  font-size: 0.9rem;
-}
-input,
-textarea {
-  outline: none;
-  border: 0;
-  width: 17.5rem;
-}
-
-.contacto__form__field {
-  border: 1px solid #ccc;
-  padding: 0.8rem;
-}
-.contacto__form__field:focus {
-  border-color: #52386e;
-}
-
-.contacto__form__center__content {
-  text-align: center;
-}
-.contacto__form__center__content__btn {
-  border-radius: 3px;
-  display: inline-block;
-  padding: 1.2rem 1rem;
-  text-decoration: none;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-  color: white;
-  background-color: #52386e;
-}
-
-.contacto__form__center__content__btngreen:active {
-  background-color: #39274d;
-}
-/*fin contacto*/
-
-/*footer*/
-
-.final {
-  height: 20%;
-  display: grid;
-  grid-template-areas:
-    "redes autor"
-    "redes autor";
-  justify-content: space-between;
-  color: #deaffc;
-}
-
-.final__redes {
-  grid-area: redes;
-  font-size: 0.9rem;
-  margin: 2rem;
-  padding: 0.5rem;
-}
-
-.final__redes img {
-  width: 1.8rem;
-  transition: all 3s;
-}
-
-.final__redes img:hover {
-  transform: rotateY(360deg);
-}
-
-.final__autor {
-  grid-area: autor;
-  margin: 2rem;
-  padding: 0.5rem;
-  text-align: center;
-  border-left: 1px solid #deaffc;
-  font-size: 0.85rem;
-}
-
-.final__menu {
-  display: none;
-}
-/*fin footer^/  
-
-
-/*media inicio*/
-
-@media only screen and (min-width: 420px) {
-  /*media home 420*/
-
-  .inicio__texto {
-    grid-area: texto;
-    padding: 1rem 27.5rem;
+ /* conocenos media */
+  
+  .conocenos-texto p{
+    margin-top: 2rem;
+    font-size: 1.5rem;
   }
-
-  /*media tratamientos 420*/
-  .tratamientos__imagenes img {
-    width: 16rem;
-    height: 16rem;
-  }
-
-  /*media productos 420*/
-  .productos__imagenes img {
-    width: 16rem;
-    height: 16rem;
-  }
-
-  /*media contacto 420*/
-  .contacto__form {
-    width: 20rem;
-  }
-  input,
-  textarea {
-    width: 17.5rem;
-  }
-
-  /*media footer 420*/
-}
-
-@media only screen and (min-width: 720px) {
-  /*media header 720*/
-  .menu__lista__button {
-    font-size: 1.3rem;
-  }
-
-  /*media inicio 720*/
-  .inicio__texto {
-    grid-area: texto;
-    padding: 1rem 20.5rem;
-  }
-
-  /*media footer 720*/
-  .final {
-    height: 20%;
-    display: grid;
-    grid-template-areas:
-      "redes autor menu"
-      "redes autor menu";
-  }
-
-  .final__autor {
-    font-size: 1rem;
-    padding: 1rem 3rem;
-    text-align: justify;
-  }
-  .final__menu {
-    grid-area: menu;
-    display: block;
-    margin: 2rem;
-    padding: 0.5rem;
-    text-align: center;
-    border-left: 1px solid #deaffc;
-  }
-  .final__menu a {
-    text-decoration: none;
-    color: #deaffc;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  /*media header 1200*/
-  header {
-    display: grid;
-    grid-template-areas:
-      "menu menu menu menu logo"
-      "menu menu menu menu logo";
-    justify-content: space-between;
-    align-items: space-between;
-  }
-  .logo {
-    height: 50%;
-    grid-area: logo;
-  }
-  .logo img {
-    width: 40%;
-    text-align: end;
-  }
-  .menu {
-    height: 28%;
-    grid-area: menu;
-    margin: 4rem;
-  }
-
-  .menu__lista {
-    display: flex;
-    justify-content: flex-start;
-    padding: 1rem;
-    font-size: 1.2rem;
-  }
-
-  .menu__lista__button {
-    padding: 1rem;
-  }
-
-  /*media home 1200*/
-  .inicio {
-    margin: 3rem;
-  }
-  .inicio__texto {
-    grid-area: texto;
-    text-align: justify;
-    padding: 1rem 38rem;
-    font-size: 2rem;
-    text-align: justify;
-  }
-
-  .inicio__slider__imagen__uno,
-  .inicio__slider__imagen__dos,
-  .inicio__slider__imagen__tres {
-    height: 38rem;
-    width: 45rem;
-  }
-
-  /*media tratamientos 1200*/
-  .tratamientos__texto {
-    grid-area: texto;
-    text-align: justify;
-    padding: 1rem;
-    font-size: 1.4rem;
-    margin: 3rem;
-  }
-
-  .tratamientos__imagenes img {
-    width: 18rem;
-    height: 18rem;
-  }
-
-  /*media producto 1200*/
-  .productos__texto {
-    grid-area: texto;
-    text-align: justify;
-    padding: 1rem;
-    font-size: 1.4rem;
-    margin: 3rem;
-  }
-
-  .producto__imagenes img {
-    width: 18rem;
-    height: 18rem;
-  }
-
-  /*media conocenos 1200*/
-  .conocenos {
-    display: grid;
-    grid-template-areas:
-      "titulo titulo titulo titulo"
-      "texto texto mapa mapa"
-      "texto texto mapa mapa";
-    align-content: center;
-    margin: 3rem;
-  }
-
-  .conocenos__titulo {
-    grid-area: titulo;
-  }
-
-  .conocenos__texto {
-    grid-area: texto;
-    display: flex;
-    flex-flow: column nowrap;
-    text-align: justify;
-    align-items: center;
-    font-size: 1.6rem;
-    margin-top: 3.6rem;
-  }
-  .conocenos__texto img {
-    display: block;
+  .conocenos-mapa{
     width: 30rem;
-    height: 26rem;
-    padding: 3rem;
-    opacity: 85%;
-  }
-
-  .conocenos__mapa {
-    grid-area: mapa;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    margin-top: 3.6rem;
-  }
-  .conocenos__mapa iframe {
     height: 30rem;
-    width: 30em;
-  }
-  .conocenos__mapa ul {
     margin-top: 4rem;
-    border: 1px solid #deaffc;
-    border-radius: 10%;
-    padding: 1rem;
+  }
+  .conocetos-mapa-datos{
+    margin-top: 2rem;
   }
 
-  /*media contacto 1200*/
-  .contacto {
-    display: grid;
-    grid-template-areas:
-      "titulo titulo titulo titulo"
-      "texto formulario formulario formulario"
-      "texto formulario formulario formulario"
-      "texto formulario formulario formulario";
-    margin: 6rem;
-  }
-  .contacto__texto {
-    grid-area: texto;
-    text-align: justify;
-    padding: 5rem;
-    font-size: 1.7rem;
-  }
-  .contacto__form {
-    grid-area: formulario;
-    width: 33rem;
-  }
-  input,
-  textarea {
-    width: 29rem;
+  /* footer media */
+  .final-menu{
+    display:block;
+    border-right: 2px pink solid;
   }
 
-  /*media footer 1200*/
-  .final {
-    height: 20%;
-    display: grid;
-    grid-template-areas:
-      "redes autor menu"
-      "redes autor menu";
-  }
-
-  .final__menu {
-    grid-area: menu;
-    display: block;
-    width: 20rem;
-    padding-left: 3rem;
-    text-align: justify;
-    border-left: 1px solid #deaffc;
+  .final-menu a{
+    text-decoration: none;
+    color: rgb(225, 223, 223);
   }
 }
-
-@media only screen and (min-width: 1300px) {
-  .inicio__texto {
-    grid-area: texto;
-    text-align: justify;
-    padding: 1rem 28rem;
-    font-size: 2rem;
-    text-align: justify;
-  }
-}
-
-/*fin media*/
