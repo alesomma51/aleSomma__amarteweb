@@ -1,7 +1,6 @@
 
 body{
-  background: rgb(249,85,123);
-background: linear-gradient(0deg, rgba(249,85,123,1) 0%, rgba(251,151,174,1) 86%);
+  background: linear-gradient(175deg,#110023,#775ab1);
   color:rgb(225, 223, 223);
 }
 
@@ -13,16 +12,33 @@ background: linear-gradient(0deg, rgba(249,85,123,1) 0%, rgba(251,151,174,1) 86%
   text-align: center;
 }
 
+.texto-menu{
+  color:rgb(225, 223, 223) ;
+}
+
+.inicio-texto{
+  text-align: justify;
+}
+
+.carta-titulo{
+  display: none;
+  color: #000
+}
+.carta-texto{
+  display: none;
+  color: #000;
+  font-weight: 600;
+}
+.card-img{
+  height: 100%;
+}
+
 /* estilos conocenos */
 .conocenos-texto p{
   text-align: justify;
 }
-.conocenos-imagen{
-  display: none;
-}
-.conocenos-mapa iframe{
-  border-radius: 10%;
-}
+
+
 
 /*estilos del footer */
 li{
@@ -46,8 +62,44 @@ li{
 
 @media only screen and (min-width:982px) {
 
- /* conocenos media */
+
+
+  .logo-principal a img{
+  width: 20rem;
+  height: 20rem;
+  text-align: center;
+  }
   
+  .inicio-texto{
+    font-size: 1.5rem;
+  }
+  .inicio-carrusel{
+    width: 57rem;
+    margin: auto;
+    margin-top: 4rem;
+  }
+  .tratamientos-cartas{
+    padding: 1.2rem;
+    width: 90rem;
+    margin-left: .1rem;
+  }
+  .carta-titulo{
+    display: inline-block;
+    margin-top: 12rem;
+    color: rgb(72, 78, 83);
+  }
+  .carta-texto{
+    display: inline-block;
+    color: #000;
+  }
+
+  .productos-cartas{
+    padding: 1.2rem;
+    width: 90rem;
+    margin-left: .1rem;
+  }
+
+ /* conocenos media */
   .conocenos-texto p{
     margin-top: 2rem;
     font-size: 1.5rem;
@@ -61,6 +113,19 @@ li{
     margin-top: 2rem;
   }
 
+
+  .contacto-texto{
+    padding: 3rem;
+    text-align: justify;
+  }
+  .contacto-formulario{
+    width: 50rem;
+    display: flex;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
   /* footer media */
   .final-menu{
     display:block;
@@ -71,4 +136,22 @@ li{
     text-decoration: none;
     color: rgb(225, 223, 223);
   }
+}
+
+@media only screen and (min-width:1400px) {
+
+  .inicio-carrusel{
+    width: 72rem;
+  }
+  
+  .carta-titulo{
+    display: inline-block;
+    margin-top: 23rem;
+    color: rgb(72, 78, 83);
+  }
+  .carta-texto{
+    display: inline-block;
+    color: rgb(72, 78, 83);
+  }
+
 }
