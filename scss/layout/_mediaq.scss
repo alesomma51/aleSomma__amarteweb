@@ -4,6 +4,7 @@
 
 /* media q */
 @media only screen and (min-width: 420px){
+
     /*media home 420*/
     .inicio__texto {
         grid-area: texto;
@@ -33,6 +34,7 @@
 }
 
 @media only screen and (min-width: 720px){
+
     /*media header 720*/
     .menu__lista__button {
         font-size: 1.3rem;
@@ -80,17 +82,17 @@
                 }
             }
             .icon-instagram{
-                background: rgba(0, 0, 0, 0.3);
-            }   
-            .icon-whatsapp{
-                background: rgba(0, 0, 0, 0.3);
-            }
-            .icon-envelop{
-                background: rgba(0, 0, 0, 0.3);
-            }
-            .icon-facebook{
-                background: rgba(0, 0, 0, 0.3);
-            }
+                    background: rgba(0, 0, 0, 0.3);
+                }   
+                .icon-whatsapp{
+                    background: rgba(0, 0, 0, 0.3);
+                }
+                .icon-envelop{
+                    background: rgba(0, 0, 0, 0.3);
+                }
+                .icon-facebook{
+                    background: rgba(0, 0, 0, 0.3);
+                }
         }
         .final__redes{
             display: none;
@@ -114,7 +116,7 @@
         "menu menu menu menu logo"
         "menu menu menu menu logo";
         justify-content: space-between;
-        align-items: space-between;
+        
         .logo {
             height: 50%;
             grid-area: logo;
@@ -130,13 +132,13 @@
                 display: flex;
                 justify-content: flex-start;
                 padding: 1rem;
-                font-size: 1.2rem;
             }
             .menu__lista__button {
                 padding: 1rem;
             }
         }
     }
+
     /*media home 1024*/
     .inicio {
         margin: 3rem;
@@ -255,7 +257,7 @@
         font-size: 2rem;
     }
     .inicio__imagen{
-        height: 40rem;
+        width: 75rem;
     }
 
     /* media tratamientos 1200*/

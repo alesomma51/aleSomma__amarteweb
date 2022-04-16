@@ -11,7 +11,8 @@
     display: grid;
     grid-template-areas:
         "titulo titulo"
-        "texto texto";
+        "texto texto"
+        "imagen imagen";
     overflow: hidden;
     justify-content: center;
     .inicio__titulo {

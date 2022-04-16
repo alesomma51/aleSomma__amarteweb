@@ -5,6 +5,7 @@
 // estilos generales
 * {
     font-family: "Cairo", sans-serif;
+    box-sizing: border-box;
 }
 body {
     background-image: $fondo
@@ -97,6 +98,14 @@ header{
 }
 /* fin header */
 
+main{
+    box-shadow:  17px 17px 65px #0a0303b0,
+    -17px -17px 65px #252525a9;
+    border-radius: 1%;
+    padding: 1rem;
+    width: 95%;
+    margin: auto;
+}
 
 /* footer */
 .final {
