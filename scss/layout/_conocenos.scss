@@ -1,0 +1,48 @@
+// import
+
+@import "../utilities/variables";
+
+/* conocenos */
+.conocenos {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "texto texto"
+        "mapa mapa";
+    color: $color-texto;
+    justify-content: center;
+    .conocenos__titulo {
+        grid-area: titulo;
+        text-align: $alineacion-titulo;
+    }
+    .conocenos__texto {
+        grid-area: texto;
+        padding: 1rem;
+        text-align: $alineacion-texto;
+        img {
+            display: none;
+        }
+    }
+    .conocenos__mapa {
+        grid-area: mapa;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        margin: 1rem;
+        iframe {
+            height: 18rem;
+            width: 18.2rem;
+            border: 1px solid #b9a48b;
+            border-radius: 20px;
+            opacity: 85%;
+        }
+        .conocenos__mapa__datos{
+            li{
+                font-size: 1.2rem;
+                color: $color-texto;
+            } 
+        }
+    }
+}
+/* fin conocenos */
+

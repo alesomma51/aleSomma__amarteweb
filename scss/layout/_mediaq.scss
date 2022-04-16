@@ -1,0 +1,296 @@
+// import
+
+@import "../utilities/variables";
+
+/* media q */
+@media only screen and (min-width: 420px){
+    /*media home 420*/
+    .inicio__texto {
+        grid-area: texto;
+        padding: 1rem;
+    }
+    /*media tratamientos 420*/
+    .tratamientos__imagenes{
+        img {
+            width: 16rem;
+            height: 16rem;
+        }
+    }
+    /*media productos 420*/
+    .productos__imagenes {
+        img{
+            width: 16rem;
+            height: 16rem;
+        }
+    }
+    /*media contacto 420*/
+    .contacto__form {
+        width: 20rem;
+        input,textarea {
+            width: 17.5rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 720px){
+    /*media header 720*/
+    .menu__lista__button {
+        font-size: 1.3rem;
+    }
+    /*media inicio 720*/
+    .inicio__texto {
+        grid-area: texto;
+        padding: 1rem;
+        font-size: 1.5rem
+    }
+    /* media tratamientos y productos 720 */
+    .tratamientos__texto , .productos__texto{
+    font-size: 1.5rem
+    }
+    /*media footer 720*/
+    .final{
+        display: flex;
+        justify-content: center;
+        .final__social__bar {
+            position: fixed;
+            left: 0;
+            top: 35%;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            z-index: 100;
+            .icon {
+                color: white;
+                text-decoration: none;
+                padding: .7rem;
+                display: flex;
+                transition: all .8s;
+                &:first-child{
+                    border-radius: 0 1rem 0 0;
+                }
+                &:last-child{
+                    border-radius: 0 0 1rem 0;
+                }
+                &:hover{
+                    padding-left: 3rem;
+                    border-radius: 0 1rem 1rem 0;
+                    box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+                    backdrop-filter: blur(10px);
+                }
+            }
+            .icon-instagram{
+                background: rgba(0, 0, 0, 0.3);
+            }   
+            .icon-whatsapp{
+                background: rgba(0, 0, 0, 0.3);
+            }
+            .icon-envelop{
+                background: rgba(0, 0, 0, 0.3);
+            }
+            .icon-facebook{
+                background: rgba(0, 0, 0, 0.3);
+            }
+        }
+        .final__redes{
+            display: none;
+        }
+        .final__autor {
+            width: 40%;
+            margin-top: 5rem;
+            font-size: .7rem;
+            text-align: center;
+            border-left: none;
+            border-top: 2px solid $color-texto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    /*media header 1024*/
+    header {
+    display: grid;
+    grid-template-areas:
+        "menu menu menu menu logo"
+        "menu menu menu menu logo";
+        justify-content: space-between;
+        align-items: space-between;
+        .logo {
+            height: 50%;
+            grid-area: logo;
+            img {
+                width: 60%;
+            }
+        }
+        .menu {
+            height: 28%;
+            grid-area: menu;
+            margin: 4rem;
+            .menu__lista {
+                display: flex;
+                justify-content: flex-start;
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+            .menu__lista__button {
+                padding: 1rem;
+            }
+        }
+    }
+    /*media home 1024*/
+    .inicio {
+        margin: 3rem;
+        .inicio__texto {
+            grid-area: texto;
+            padding: 1rem;
+            font-size: 2.2rem;
+        }
+        .inicio__imagen{ 
+            img{
+            height: 42rem;
+            }
+        }  
+    }
+
+    /*media tratamientos 1024*/
+    .tratamientos__texto {
+        grid-area: texto;   
+        padding: 1rem;
+        font-size: 2.2rem;
+        margin: 3rem;
+    }
+    .tratamientos__imagenes{ 
+            img {
+                width: 18rem;
+                height: 18rem;
+            }
+    }
+
+    /*media producto 1024*/
+    .productos__texto {
+        grid-area: texto;
+        padding: 1rem;
+        font-size: 2.2rem;
+        margin: 3rem;
+    }
+    .producto__imagenes{ 
+        img {
+            width: 18rem;
+            height: 18rem;
+        }
+    }
+
+    /*media conocenos 1024*/
+    .conocenos {
+        display: grid;
+        grid-template-areas:
+        "titulo titulo titulo titulo"
+        "texto texto mapa mapa"
+        "texto texto mapa mapa";
+        align-content: center;
+        margin: 3rem;
+        .conocenos__titulo {
+            grid-area: titulo;
+        }
+        .conocenos__texto {
+            grid-area: texto;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            font-size: 1.6rem;
+            margin-top: 3.6rem;
+            img {
+                display: block;
+                width: 30rem;
+                height: 26rem;
+                padding: 3rem;
+                opacity: 85%;
+            }
+        }
+        .conocenos__mapa {
+            grid-area: mapa;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            margin-top: 3.6rem;
+            iframe {
+                height: 28rem;
+                width: 28em;
+            }
+            ul {
+                margin-top: 4rem;
+                border: 1px solid $color-texto;
+                border-radius: 10%;
+                padding: 1rem;
+            }
+        }
+    }
+
+    /*media contacto 1024*/
+    .contacto {
+        display: grid;
+        grid-template-areas:
+        "titulo titulo titulo titulo"
+        "texto texto formulario formulario"
+        "texto texto formulario formulario"
+        "texto texto formulario formulario";
+        .contacto__texto {
+            grid-area: texto;
+            padding: 1.5rem;
+            font-size: 1.7rem;
+        }
+        .contacto__form {
+            grid-area: formulario;
+            width: 20rem;
+            margin:2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    /* media home 1200 */
+    .inicio__texto {
+        grid-area: texto;
+        padding: 1rem ;
+        font-size: 2rem;
+    }
+    .inicio__imagen{
+        height: 40rem;
+    }
+
+    /* media tratamientos 1200*/
+    .tratamientos__texto{
+        font-size: 2rem;
+    }
+
+    /* media productos 1200 */
+    .productos__texto{
+        font-size: 2rem;
+    }
+
+    /*media contacto 1200*/
+    .contacto {
+        display: grid;
+        grid-template-areas:
+        "titulo titulo titulo titulo"
+        "texto texto formulario formulario"
+        "texto texto formulario formulario"
+        "texto texto formulario formulario";
+        .contacto__texto {
+            grid-area: texto;
+            padding: 1.5rem;
+            font-size: 1.7rem;
+        }
+        .contacto__form {
+            grid-area: formulario;
+            width: 30rem;
+            margin:2rem;
+            input,textarea {
+                outline: none;
+                border: 0;
+                width: 27.5rem;
+            }
+        }
+    }
+}
+/* fin mediaq */

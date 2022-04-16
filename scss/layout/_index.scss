@@ -1,0 +1,28 @@
+// import
+
+@import "../utilities/variables";
+
+
+/* inicio */
+
+.inicio {
+    height: 50%;
+    color: $color-texto;
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "texto texto";
+    overflow: hidden;
+    justify-content: center;
+    .inicio__titulo {
+        grid-area: titulo;
+        text-align:$alineacion-titulo;
+    }
+    .inicio__texto {
+        grid-area: texto;
+        padding: 1rem; 
+        text-align:$alineacion-texto;
+    }
+}
+
+/* fin inicio */

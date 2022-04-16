@@ -1,0 +1,70 @@
+// import
+
+@import "../utilities/variables";
+
+/* contacto */
+.contacto {
+    height: 50%;
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "texto texto"
+        "formulario formulario";
+    margin-bottom: 1%;
+    color: $color-texto;
+    justify-content: center;
+    .contacto__titulo {
+        grid-area: titulo ;
+        text-align: $alineacion-titulo;
+        padding: 1rem;
+    }
+    .contacto__texto{
+        grid-area: texto;
+        text-align:$alineacion-texto;
+        padding: 1rem;
+    }
+    .contacto__form {
+        grid-area: formulario;
+        width: 20rem;
+        padding: 1.3rem;
+        margin: auto;
+        background-color: rgba(248, 245, 245, 0.5);
+        backdrop-filter: blur(3px);
+        color: #554c5f;
+        border-radius: 5%;
+        font-size: 0.9rem;
+        p{
+            margin-top: 1rem;
+        }
+        input,textarea {
+            outline: none;
+            border: 0;
+            width: 17.5rem;
+        }
+        .contacto__form__field {
+            border: 1px solid #ccc;
+            padding: 0.8rem;
+            &:focus {
+                border-color: #52386e;
+            }
+        }
+        .contacto__form__center__content {
+            text-align: center;
+            .contacto__form__center__content__btn {
+                border-radius: 3px;
+                display: inline-block;
+                padding: 1.2rem 1rem;
+                text-decoration: none;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+                color: white;
+                background-color: #52386e;
+                &:active {
+                    background-color: #39274d;
+                }
+            }
+        }
+    }
+}
+/* fin contacto */
+

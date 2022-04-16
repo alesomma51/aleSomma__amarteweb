@@ -1,0 +1,26 @@
+// import
+
+@import "../utilities/variables";
+
+/* productos */
+.productos {
+    height: 50%;
+    display: grid;
+    grid-template-areas:
+        "titulo titulo"
+        "texto texto"
+        "imagen imagen"
+        "imagen imagen";
+    color: $color-texto;
+    justify-content: center;
+    .productos__titulo {
+        grid-area: titulo;
+        text-align: $alineacion-titulo;
+    }
+    .productos__texto {
+        grid-area: texto;
+        padding: 1rem;
+        text-align: $alineacion-texto;
+    }   
+}
+/* fin productos */
