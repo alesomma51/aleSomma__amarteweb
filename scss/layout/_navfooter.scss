@@ -1,0 +1,128 @@
+// import utilities
+
+@import "utilities/variables";
+
+/* header */
+header {
+  height: 30%;
+  display: grid;
+  grid-template-areas:
+    "logo logo"
+    "menu menu";
+  justify-content: center;
+  text-align: $alineacion-titulo;
+  .logo {
+    height: 80%;
+    grid-area: logo;
+    img {
+      width: 40%;
+    }
+  }
+  .menu {
+    height: 50%;
+    grid-area: menu;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid $color-texto;
+    animation-name: border;
+    animation-timing-function: ease;
+    animation-iteration-count: initial;
+    animation-duration: 5s;
+    .menu__lista {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: nowrap;
+      padding: 1rem;
+      transition: 0.2s all;
+      &:hover .menu__lista__button {
+        filter: blur(3px);
+        opacity: 0.5;
+        transform: scale(0.98);
+        box-shadow: none;
+      }
+      &:hover .menu__lista__button:hover {
+        transform: scale(1);
+        filter: blur(0px);
+        opacity: 1;
+        color: $color-texto;
+      }
+      .menu__lista__button {
+        text-align: $alineacion-titulo;
+        text-decoration: none;
+        color: $color-texto;
+        font-size: 12.5px;
+      }
+    }
+    @keyframes border {
+      0% {
+        border-bottom: 2px solid $color-texto;
+      }
+      12% {
+        border-bottom: 2.1px solid #52386e;
+      }
+      25% {
+        border-bottom: 2.2px solid $color-texto;
+      }
+      32% {
+        border-bottom: 2.3px solid #52386e;
+      }
+      50% {
+        border-bottom: 2.4px solid $color-texto;
+      }
+      62% {
+        border-bottom: 2.3px solid #52386e;
+      }
+      75% {
+        border-bottom: 2.2px solid $color-texto;
+      }
+      82% {
+        border-bottom: 2.1px solid #52386e;
+      }
+      100% {
+        border-bottom: 2px solid $color-texto;
+      }
+    }
+  }
+}
+/* fin header */
+
+main {
+  box-shadow: 17px 17px 65px #0a0303b0, -17px -17px 65px #252525a9;
+  border-radius: 3%;
+  padding: 1rem;
+  width: 95%;
+  margin: auto;
+}
+
+/* footer */
+.final {
+  height: 20%;
+  display: grid;
+  grid-template-areas:
+    "redes autor"
+    "redes autor";
+  justify-content: space-between;
+  color: $color-texto;
+  .final__social__bar {
+    display: none;
+  }
+  .final__redes {
+    grid-area: redes;
+    font-size: 0.9rem;
+    margin: 0.5rem;
+    margin-top: 1.8rem;
+    padding: 0.5rem;
+    margin-right: 1.8rem;
+    img {
+      margin: 5px;
+    }
+  }
+  .final__autor {
+    grid-area: autor;
+    padding: 0.5rem;
+    margin-top: 2rem;
+    text-align: start;
+    font-size: 0.85rem;
+    border-left: 1px solid $color-texto;
+  }
+}
+/* fin footer */
