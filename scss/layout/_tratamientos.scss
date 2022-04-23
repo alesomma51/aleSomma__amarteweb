@@ -5,21 +5,16 @@
 /* tratamientos */
 
 .tratamientos {
-    height: 50%;
-    display: grid;
+    @include height-center-grid;
     grid-template-areas:
         "titulo titulo"
         "texto texto";
-    color: $color-texto;
-    justify-content: center;
     .tratamientos__titulo {
         grid-area: titulo;
         text-align: $alineacion-titulo;
     }
     .tratamientos__texto {
-        grid-area: texto;
-        padding: 1rem;
-        text-align: $alineacion-texto;
+        @extend .textoprincipal;
     }
     
 }

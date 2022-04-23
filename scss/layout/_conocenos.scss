@@ -4,21 +4,17 @@
 
 /* conocenos */
 .conocenos {
-    display: grid;
+    @include height-center-grid;
     grid-template-areas:
         "titulo titulo"
         "texto texto"
         "mapa mapa";
-    color: $color-texto;
-    justify-content: center;
     .conocenos__titulo {
         grid-area: titulo;
         text-align: $alineacion-titulo;
     }
     .conocenos__texto {
-        grid-area: texto;
-        padding: 1rem;
-        text-align: $alineacion-texto;
+        @extend .textoprincipal;
         img {
             display: none;
         }

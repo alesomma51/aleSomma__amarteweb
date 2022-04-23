@@ -4,24 +4,18 @@
 
 /* contacto */
 .contacto {
-    height: 50%;
-    display: grid;
+    @include height-center-grid;
     grid-template-areas:
         "titulo titulo"
         "texto texto"
         "formulario formulario";
     margin-bottom: 1%;
-    color: $color-texto;
-    justify-content: center;
     .contacto__titulo {
         grid-area: titulo ;
         text-align: $alineacion-titulo;
-        padding: 1rem;
     }
     .contacto__texto{
-        grid-area: texto;
-        text-align:$alineacion-texto;
-        padding: 1rem;
+        @extend .textoprincipal;
     }
     .contacto__form {
         grid-area: formulario;

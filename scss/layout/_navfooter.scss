@@ -86,11 +86,11 @@ header {
 /* fin header */
 
 main {
-  box-shadow: 17px 17px 65px #0a0303b0, -17px -17px 65px #252525a9;
-  border-radius: 3%;
+  box-shadow: map-get($estilos, sombra );
+  border-radius: map-get($estilos, borde );
   padding: 1rem;
   width: 95%;
-  margin: auto;
+  margin: map-get($estilos, margen);
 }
 
 /* footer */

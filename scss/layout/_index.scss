@@ -6,23 +6,16 @@
 /* inicio */
 
 .inicio {
-    height: 50%;
-    color: $color-texto;
-    display: grid;
+    @include height-center-grid;
     grid-template-areas:
         "titulo titulo"
-        "texto texto"
-        "imagen imagen";
-    overflow: hidden;
-    justify-content: center;
+        "texto texto";
     .inicio__titulo {
         grid-area: titulo;
         text-align:$alineacion-titulo;
     }
     .inicio__texto {
-        grid-area: texto;
-        padding: 1rem; 
-        text-align:$alineacion-texto;
+        @extend .textoprincipal;
     }
 }
 

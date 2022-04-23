@@ -4,3 +4,23 @@ $fondo:linear-gradient(to right top, #3d2777, #3f2979, #412a7a, #432c7c, #452e7e
 $color-texto:#deaffc;
 $alineacion-titulo:center;
 $alineacion-texto:justify;
+$tituloprincipalmq:3rem;
+
+$estilos:(
+    sombra: (17px 17px 65px #0a0303b0, -17px -17px 65px #252525a9),
+    borde: 1%,
+    margen: auto,
+);
+
+.textoprincipal{
+    grid-area: texto;
+    padding: 1rem; 
+    text-align:justify;
+}
+
+@mixin height-center-grid {
+    height: 50%;
+    color: $color-texto;
+    justify-content: center;
+    display: grid;
+}
