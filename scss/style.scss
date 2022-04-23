@@ -2,20 +2,6 @@
 
 @import "utilities/variables";
 
-// estilos generales
-* {
-    font-family: "Cairo", sans-serif;
-    box-sizing: border-box;
-}
-body {
-    background-image: $fondo
-
-}
-li {
-    list-style: none;
-}
-
-
 
 // import layout
 
@@ -34,3 +20,22 @@ li {
 // import media q
 
 @import "layout/mediaq";
+
+// estilos generales
+
+body {
+    background-image: $fondo
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $color-texto;
+    &:hover{
+        color: $color-texto;
+    }
+    &:focus{
+        color: $color-texto;
+    }
+}

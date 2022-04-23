@@ -1,17 +1,12 @@
-.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .conocenos .conocenos__texto, .contacto .contacto__texto {
-  grid-area: texto;
-  padding: 1rem;
-  text-align: justify; }
-
 * {
   font-family: "Cairo", sans-serif;
   box-sizing: border-box; }
 
-body {
-  background-image: linear-gradient(to right top, #3d2777, #3f2979, #412a7a, #432c7c, #452e7e, #4a3283, #4f3688, #543a8d, #5d4296, #654a9f, #6e52a8, #775ab1); }
 
-li {
-  list-style: none; }
+.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .conocenos .conocenos__texto, .contacto .contacto__texto {
+  grid-area: texto;
+  padding: 1rem;
+  text-align: justify; }
 
 .textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .conocenos .conocenos__texto, .contacto .contacto__texto {
   grid-area: texto;
@@ -53,12 +48,9 @@ header {
       header .menu .menu__lista:hover .menu__lista__button:hover {
         transform: scale(1);
         filter: blur(0px);
-        opacity: 1;
-        color: #deaffc; }
+        opacity: 1; }
       header .menu .menu__lista .menu__lista__button {
         text-align: center;
-        text-decoration: none;
-        color: #deaffc;
         font-size: 12.5px; }
 
 @keyframes border {
@@ -310,29 +302,24 @@ main {
       flex-direction: column;
       align-items: flex-start;
       z-index: 100; }
-      .final .final__social__bar .icon {
+      .final .final__social__bar a {
         color: white;
         text-decoration: none;
         padding: .7rem;
         display: flex;
-        transition: all .8s; }
-        .final .final__social__bar .icon:first-child {
+        transition: all .8s;
+        background: rgba(0, 0, 0, 0.3); }
+        .final .final__social__bar a:first-child {
           border-radius: 0 1rem 0 0; }
-        .final .final__social__bar .icon:last-child {
+        .final .final__social__bar a:last-child {
           border-radius: 0 0 1rem 0; }
-        .final .final__social__bar .icon:hover {
+        .final .final__social__bar a:hover {
           padding-left: 3rem;
           border-radius: 0 1rem 1rem 0;
           box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
           backdrop-filter: blur(10px); }
-      .final .final__social__bar .icon-instagram {
-        background: rgba(0, 0, 0, 0.3); }
-      .final .final__social__bar .icon-whatsapp {
-        background: rgba(0, 0, 0, 0.3); }
-      .final .final__social__bar .icon-envelop {
-        background: rgba(0, 0, 0, 0.3); }
-      .final .final__social__bar .icon-facebook {
-        background: rgba(0, 0, 0, 0.3); }
+        .final .final__social__bar a img {
+          width: 22px; }
     .final .final__redes {
       display: none; }
     .final .final__autor {
@@ -365,35 +352,35 @@ main {
       header .menu .menu__lista__button {
         padding: 1rem; }
   /*media home 1024*/
-  .inicio__titulo {
+  .inicio .inicio__titulo {
     margin-top: 3rem; }
-  .inicio__texto {
+  .inicio .inicio__texto {
     grid-area: texto;
     padding: 1rem;
     font-size: 2.2rem;
     margin: 3rem; }
-  .inicio__imagen img {
+  .inicio .inicio__imagen img {
     height: 42rem; }
   /*media tratamientos 1024*/
-  .tratamientos__titulo {
+  .tratamientos .tratamientos__titulo {
     margin-top: 3rem; }
-  .tratamientos__texto {
+  .tratamientos .tratamientos__texto {
     grid-area: texto;
     padding: 1rem;
     font-size: 2.2rem;
     margin: 3rem; }
-  .tratamientos__imagenes img {
+  .tratamientos .tratamientos__imagenes img {
     width: 18rem;
     height: 18rem; }
   /*media producto 1024*/
-  .productos__titulo {
+  .productos .productos__titulo {
     margin-top: 3rem; }
-  .productos__texto {
+  .productos .productos__texto {
     grid-area: texto;
     padding: 1rem;
     font-size: 2.2rem;
     margin: 3rem; }
-  .producto__imagenes img {
+  .productos .producto__imagenes img {
     width: 18rem;
     height: 18rem; }
   /*media conocenos 1024*/
@@ -444,11 +431,11 @@ main {
 
 @media only screen and (min-width: 1200px) {
   /* media home 1200 */
-  .inicio__texto {
+  .inicio .inicio__texto {
     grid-area: texto;
     padding: 1rem;
     font-size: 2rem; }
-  .inicio__imagen {
+  .inicio .inicio__imagen {
     width: 75rem; }
   /* media tratamientos 1200*/
   .tratamientos__texto {
@@ -474,3 +461,17 @@ main {
         width: 27.5rem; } }
 
 /* fin mediaq */
+
+body {
+  background-image: linear-gradient(to right top, #3d2777, #3f2979, #412a7a, #432c7c, #452e7e, #4a3283, #4f3688, #543a8d, #5d4296, #654a9f, #6e52a8, #775ab1); }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #deaffc; }
+  a:hover {
+    color: #deaffc; }
+  a:focus {
+    color: #deaffc; }
