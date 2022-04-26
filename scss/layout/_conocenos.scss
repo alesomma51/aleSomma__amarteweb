@@ -12,9 +12,9 @@
     .conocenos__titulo {
         grid-area: titulo;
         text-align: $alineacion-titulo;
+        margin-top: 3rem;
     }
     .conocenos__texto {
-        @extend .textoprincipal;
         img {
             display: none;
         }
@@ -35,7 +35,7 @@
         .conocenos__mapa__datos{
             li{
                 font-size: 1.2rem;
-                color: $color-texto;
+                color: $color-a;
             } 
         }
     }

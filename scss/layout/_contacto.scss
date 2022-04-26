@@ -22,9 +22,9 @@
         width: 20rem;
         padding: 1.3rem;
         margin: auto;
-        background-color: rgba(248, 245, 245, 0.5);
+        background-color:#554c5f;
         backdrop-filter: blur(3px);
-        color: #554c5f;
+        color: rgba(248, 245, 245, 0.5);
         border-radius: 5%;
         font-size: 0.9rem;
         p{
@@ -36,10 +36,10 @@
             width: 17.5rem;
         }
         .contacto__form__field {
-            border: 1px solid #ccc;
+            border: 1px solid #52386e;
             padding: 0.8rem;
             &:focus {
-                border-color: #52386e;
+                border-color:#ccc;
             }
         }
         .contacto__form__center__content {
@@ -52,9 +52,9 @@
                 text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
                 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
                 color: white;
-                background-color: #52386e;
+                background-color: #ccc;
                 &:active {
-                    background-color: #39274d;
+                    background-color: rgb(179, 179, 179);
                 }
             }
         }

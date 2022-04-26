@@ -1,14 +1,9 @@
-* {
-  font-family: "Cairo", sans-serif;
-  box-sizing: border-box; }
-
-
-.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .conocenos .conocenos__texto, .contacto .contacto__texto {
+.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .contacto .contacto__texto {
   grid-area: texto;
   padding: 1rem;
   text-align: justify; }
 
-.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .conocenos .conocenos__texto, .contacto .contacto__texto {
+.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .contacto .contacto__texto {
   grid-area: texto;
   padding: 1rem;
   text-align: justify; }
@@ -29,7 +24,7 @@ header {
     height: 50%;
     grid-area: menu;
     margin-bottom: 2rem;
-    border-bottom: 2px solid #deaffc;
+    border-bottom: 2px solid #f7f5fa;
     animation-name: border;
     animation-timing-function: ease;
     animation-iteration-count: initial;
@@ -55,23 +50,23 @@ header {
 
 @keyframes border {
   0% {
-    border-bottom: 2px solid #deaffc; }
+    border-bottom: 2px solid #f7f5fa; }
   12% {
     border-bottom: 2.1px solid #52386e; }
   25% {
-    border-bottom: 2.2px solid #deaffc; }
+    border-bottom: 2.2px solid #f7f5fa; }
   32% {
     border-bottom: 2.3px solid #52386e; }
   50% {
-    border-bottom: 2.4px solid #deaffc; }
+    border-bottom: 2.4px solid #f7f5fa; }
   62% {
     border-bottom: 2.3px solid #52386e; }
   75% {
-    border-bottom: 2.2px solid #deaffc; }
+    border-bottom: 2.2px solid #f7f5fa; }
   82% {
     border-bottom: 2.1px solid #52386e; }
   100% {
-    border-bottom: 2px solid #deaffc; } }
+    border-bottom: 2px solid #f7f5fa; } }
 
 /* fin header */
 main {
@@ -79,7 +74,10 @@ main {
   border-radius: 1%;
   padding: 1rem;
   width: 95%;
-  margin: auto; }
+  margin: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background: #f7f5fa; }
 
 /* footer */
 .final {
@@ -87,7 +85,7 @@ main {
   display: grid;
   grid-template-areas: "redes autor" "redes autor";
   justify-content: space-between;
-  color: #deaffc; }
+  color: #f7f5fa; }
   .final .final__social__bar {
     display: none; }
   .final .final__redes {
@@ -105,10 +103,10 @@ main {
     margin-top: 2rem;
     text-align: start;
     font-size: 0.85rem;
-    border-left: 1px solid #deaffc; }
+    border-left: 1px solid #f7f5fa; }
 
 /* fin footer */
-.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .conocenos .conocenos__texto, .contacto .contacto__texto {
+.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .contacto .contacto__texto {
   grid-area: texto;
   padding: 1rem;
   text-align: justify; }
@@ -116,7 +114,7 @@ main {
 /* inicio */
 .inicio {
   height: 50%;
-  color: #deaffc;
+  color: #412a7a;
   justify-content: center;
   display: grid;
   grid-template-areas: "titulo titulo" "texto texto"; }
@@ -125,7 +123,7 @@ main {
     text-align: center; }
 
 /* fin inicio */
-.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .conocenos .conocenos__texto, .contacto .contacto__texto {
+.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .contacto .contacto__texto {
   grid-area: texto;
   padding: 1rem;
   text-align: justify; }
@@ -133,7 +131,7 @@ main {
 /* tratamientos */
 .tratamientos {
   height: 50%;
-  color: #deaffc;
+  color: #412a7a;
   justify-content: center;
   display: grid;
   grid-template-areas: "titulo titulo" "texto texto"; }
@@ -149,7 +147,7 @@ main {
     border-radius: 50%; }
 
 /* fin tratamientos */
-.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .conocenos .conocenos__texto, .contacto .contacto__texto {
+.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .contacto .contacto__texto {
   grid-area: texto;
   padding: 1rem;
   text-align: justify; }
@@ -157,7 +155,7 @@ main {
 /* productos */
 .productos {
   height: 50%;
-  color: #deaffc;
+  color: #412a7a;
   justify-content: center;
   display: grid;
   grid-template-areas: "titulo titulo" "texto texto" "imagen imagen" "imagen imagen"; }
@@ -166,7 +164,7 @@ main {
     text-align: center; }
 
 /* fin productos */
-.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .conocenos .conocenos__texto, .contacto .contacto__texto {
+.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .contacto .contacto__texto {
   grid-area: texto;
   padding: 1rem;
   text-align: justify; }
@@ -174,13 +172,14 @@ main {
 /* conocenos */
 .conocenos {
   height: 50%;
-  color: #deaffc;
+  color: #412a7a;
   justify-content: center;
   display: grid;
   grid-template-areas: "titulo titulo" "texto texto" "mapa mapa"; }
   .conocenos .conocenos__titulo {
     grid-area: titulo;
-    text-align: center; }
+    text-align: center;
+    margin-top: 3rem; }
   .conocenos .conocenos__texto img {
     display: none; }
   .conocenos .conocenos__mapa {
@@ -197,10 +196,10 @@ main {
       opacity: 85%; }
     .conocenos .conocenos__mapa .conocenos__mapa__datos li {
       font-size: 1.2rem;
-      color: #deaffc; }
+      color: #f7f5fa; }
 
 /* fin conocenos */
-.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .conocenos .conocenos__texto, .contacto .contacto__texto {
+.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .contacto .contacto__texto {
   grid-area: texto;
   padding: 1rem;
   text-align: justify; }
@@ -208,7 +207,7 @@ main {
 /* contacto */
 .contacto {
   height: 50%;
-  color: #deaffc;
+  color: #412a7a;
   justify-content: center;
   display: grid;
   grid-template-areas: "titulo titulo" "texto texto" "formulario formulario";
@@ -221,9 +220,9 @@ main {
     width: 20rem;
     padding: 1.3rem;
     margin: auto;
-    background-color: rgba(248, 245, 245, 0.5);
+    background-color: #554c5f;
     backdrop-filter: blur(3px);
-    color: #554c5f;
+    color: rgba(248, 245, 245, 0.5);
     border-radius: 5%;
     font-size: 0.9rem; }
     .contacto .contacto__form p {
@@ -233,10 +232,10 @@ main {
       border: 0;
       width: 17.5rem; }
     .contacto .contacto__form .contacto__form__field {
-      border: 1px solid #ccc;
+      border: 1px solid #52386e;
       padding: 0.8rem; }
       .contacto .contacto__form .contacto__form__field:focus {
-        border-color: #52386e; }
+        border-color: #ccc; }
     .contacto .contacto__form .contacto__form__center__content {
       text-align: center; }
       .contacto .contacto__form .contacto__form__center__content .contacto__form__center__content__btn {
@@ -247,12 +246,12 @@ main {
         text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
         color: white;
-        background-color: #52386e; }
+        background-color: #ccc; }
         .contacto .contacto__form .contacto__form__center__content .contacto__form__center__content__btn:active {
-          background-color: #39274d; }
+          background-color: #b3b3b3; }
 
 /* fin contacto */
-.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .conocenos .conocenos__texto, .contacto .contacto__texto {
+.textoprincipal, .inicio .inicio__texto, .tratamientos .tratamientos__texto, .productos .productos__texto, .contacto .contacto__texto {
   grid-area: texto;
   padding: 1rem;
   text-align: justify; }
@@ -314,12 +313,12 @@ main {
         .final .final__social__bar a:last-child {
           border-radius: 0 0 1rem 0; }
         .final .final__social__bar a:hover {
-          padding-left: 3rem;
+          padding-left: 5rem;
           border-radius: 0 1rem 1rem 0;
           box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
           backdrop-filter: blur(10px); }
         .final .final__social__bar a img {
-          width: 22px; }
+          width: 30px; }
     .final .final__redes {
       display: none; }
     .final .final__autor {
@@ -328,7 +327,7 @@ main {
       font-size: .7rem;
       text-align: center;
       border-left: none;
-      border-top: 2px solid #deaffc; } }
+      border-top: 2px solid #f7f5fa; } }
 
 @media only screen and (min-width: 1024px) {
   /*media header 1024*/
@@ -411,7 +410,7 @@ main {
         width: 28em; }
       .conocenos .conocenos__mapa ul {
         margin-top: 4rem;
-        border: 1px solid #deaffc;
+        border: 1px solid #412a7a;
         border-radius: 10%;
         padding: 1rem; }
   /*media contacto 1024*/
@@ -461,7 +460,6 @@ main {
         width: 27.5rem; } }
 
 /* fin mediaq */
-
 body {
   background-image: linear-gradient(to right top, #3d2777, #3f2979, #412a7a, #432c7c, #452e7e, #4a3283, #4f3688, #543a8d, #5d4296, #654a9f, #6e52a8, #775ab1); }
 
@@ -470,8 +468,8 @@ li {
 
 a {
   text-decoration: none;
-  color: #deaffc; }
+  color: #f7f5fa; }
   a:hover {
-    color: #deaffc; }
+    color: #f7f5fa; }
   a:focus {
-    color: #deaffc; }
+    color: #f7f5fa; }
