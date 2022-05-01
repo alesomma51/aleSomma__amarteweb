@@ -26,7 +26,7 @@ header {
     animation-name: border;
     animation-timing-function: ease;
     animation-iteration-count: initial;
-    animation-duration: 5s;
+    animation-duration: 3s;
     .menu__lista {
       display: flex;
       justify-content: space-around;
@@ -46,7 +46,7 @@ header {
       }
       .menu__lista__button {
         text-align: $alineacion-titulo;
-        font-size: 12.5px;
+        font-size: 11.5px;
       }
     }
     @keyframes border {
