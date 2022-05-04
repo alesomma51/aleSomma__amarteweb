@@ -43,11 +43,20 @@
     .inicio__texto {
         grid-area: texto;
         padding: 1rem;
-        font-size: 1.5rem
+        font-size: 1rem
     }
     /* media tratamientos y productos 720 */
     .tratamientos__texto , .productos__texto{
-    font-size: 1.5rem
+    font-size: 1rem
+    }
+
+    .conocenos__texto{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+
+    .contacto__texto{
+        font-size: 1rem;
     }
     /*media footer 720*/
     .final{
@@ -138,7 +147,7 @@
         .inicio__texto {
         grid-area: texto;
         padding: 1rem;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         margin: 3rem;   
         }
         .inicio__imagen{ 
@@ -156,7 +165,7 @@
         .tratamientos__texto {
             grid-area: texto;   
             padding: 1rem;
-            font-size: 2.2rem;
+            font-size: 1.5rem;
             margin: 3rem;
         }
         .tratamientos__imagenes{ 
@@ -174,7 +183,7 @@
         .productos__texto {
             grid-area: texto;
             padding: 1rem;
-            font-size: 2.2rem;
+            font-size: 1.5rem;
             margin: 3rem;
         }
         .producto__imagenes{ 
@@ -202,7 +211,7 @@
             display: flex;
             flex-flow: column nowrap;
             align-items: center;
-            font-size: 1.6rem;
+            font-size: 1.5rem;
             margin-top: 3.6rem;
             img {
                 display: block;
@@ -241,7 +250,7 @@
         .contacto__texto {
             grid-area: texto;
             padding: 1.5rem;
-            font-size: 1.7rem;
+            font-size: 1rem;
         }
         .contacto__form {
             grid-area: formulario;
@@ -257,7 +266,6 @@
         .inicio__texto {
             grid-area: texto;
             padding: 1rem ;
-            font-size: 2rem;
         }
         .inicio__imagen{
             width: 75rem;
@@ -285,7 +293,7 @@
         .contacto__texto {
             grid-area: texto;
             padding: 1.5rem;
-            font-size: 1.7rem;
+            font-size: 1.5rem;
         }
         .contacto__form {
             grid-area: formulario;
