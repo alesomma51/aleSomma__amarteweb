@@ -58,6 +58,14 @@
     .contacto__texto{
         font-size: 1rem;
     }
+
+    .contacto__form {
+        width: 20rem;
+        font-size: 1rem;
+        input,textarea {
+            width: 17.5rem;
+        }
+    }
     /*media footer 720*/
     .final{
         display: flex;
@@ -108,6 +116,7 @@
         }
     }
 }
+
 
 @media only screen and (min-width: 1024px){
     /*media header 1024*/
@@ -254,8 +263,11 @@
         }
         .contacto__form {
             grid-area: formulario;
-            width: 20rem;
+            width: 23rem;
             margin:2rem;
+            input,textarea {
+                width: 20.5rem;
+            }
         }
     }
 }
